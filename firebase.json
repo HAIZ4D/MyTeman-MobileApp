@@ -1,0 +1,42 @@
+{
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "isn-accessible-bridge",
+          "appId": "1:907586696932:android:5b90b94bdf5df37cf71ef1",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "isn-accessible-bridge",
+          "configurations": {
+            "android": "1:907586696932:android:5b90b94bdf5df37cf71ef1",
+            "ios": "1:907586696932:ios:4f0d3b94c715a116f71ef1",
+            "macos": "1:907586696932:ios:4f0d3b94c715a116f71ef1",
+            "web": "1:907586696932:web:a59546f058eebe53f71ef1",
+            "windows": "1:907586696932:web:c455f2deacdf2480f71ef1"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "clinic_001",
+    "name": "KILINIK DR. HALIM SDN BHD",
+    "address": "MT 254 TAMAN SINN, JALAN SEMABOK",
+    "postcode": "75050",
+    "city": "Melaka",
+    "state": "Melaka",
+    "contact": "+606-2841199",
+    "is_public": false,
+    "location_url": "https://maps.app.goo.gl/77nDrK7Wa1ay4TvB7",
+    "latitude": 2.1896,
+    "longitude": 102.2501,
+    "operating_hours": "Mon-Fri: 8:00 AM - 5:00 PM, Sat: 8:00 AM - 1:00 PM",
+    "services": ["General Checkup", "Blood Test", "Vaccination", "Health Screening"],
+    "languages": ["Malay", "English", "Chinese"]
+  },
+  {
+    "id": "clinic_002",
+    "name": "ALPRO CLINIC",
+    "address": "NO 29-5 (TINGKAT BAWAH), JALAN PESTA 1/2 KAMPUNG KENANGAN TUN DR ISMAIL",
+    "postcode": "84000",
+    "city": "Muar",
+    "state": "Johor",
+    "contact": "+6013-9724828",
+    "is_public": false,
+    "location_url": "https://maps.app.goo.gl/8QCxfsjdadT8Mj5V9",
+    "latitude": 2.0442,
+    "longitude": 102.5689,
+    "operating_hours": "Mon-Sat: 9:00 AM - 6:00 PM",
+    "services": ["General Checkup", "Blood Test", "X-Ray", "Health Screening"],
+    "languages": ["Malay", "English"]
+  },
+  {
+    "id": "clinic_003",
+    "name": "Clinic Ramani",
+    "address": "2026 Taman Ria, KM4 Jalan Seremban",
+    "postcode": "71000",
+    "city": "Port Dickson",
+    "state": "Negeri Sembilan",
+    "contact": "+606-6512244",
+    "is_public": false,
+    "location_url": "https://maps.app.goo.gl/ujZAj6PxPwoVsqyG8",
+    "latitude": 2.5270,
+    "longitude": 101.7967,
+    "operating_hours": "Mon-Fri: 8:30 AM - 5:30 PM, Sat: 8:30 AM - 12:30 PM",
+    "services": ["General Checkup", "Blood Test", "Minor Surgery", "Health Screening"],
+    "languages": ["Malay", "English", "Tamil"]
+  }
+]

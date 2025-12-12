@@ -1,0 +1,34 @@
+{
+  "patterns": [
+    {
+      "match": "cari klinik|klinik berdekatan|peka b40|klinik peka|pemeriksaan kesihatan|health screening|klinik kesihatan|hospital near me",
+      "serviceId": "peka_b40_clinic_search",
+      "lang": "ms"
+    },
+    {
+      "match": "find clinic|clinic near|peka b40|health screening|health clinic|hospital near|nearest clinic|medical center",
+      "serviceId": "peka_b40_clinic_search",
+      "lang": "en"
+    },
+    {
+      "match": "kelayakan b40|semak kelayakan|layak b40|eligibility check|eligible for b40|am i eligible|check eligibility",
+      "serviceId": "peka_b40_eligibility_check",
+      "lang": "ms"
+    },
+    {
+      "match": "b40 eligibility|check eligibility|am i eligible|eligibility check|qualify for b40|b40 status|check status",
+      "serviceId": "peka_b40_eligibility_check",
+      "lang": "en"
+    },
+    {
+      "match": "bkoku|bantuan oku|bantuan pelajar oku|permohonan bkoku|bantuan kewangan oku|disabled student|financial aid disabled",
+      "serviceId": "bkoku_application_2025",
+      "lang": "ms"
+    },
+    {
+      "match": "bkoku|disabled student aid|financial assistance disabled|oku assistance|special needs student|disability grant|student disability",
+      "serviceId": "bkoku_application_2025",
+      "lang": "en"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "patterns": [
+    {
+      "match": "mohon bantuan|saya perlukan bantuan|minta bantuan|bantuan kebajikan|tolong saya|perlu bantuan kewangan",
+      "serviceId": "welfare_relief_2025",
+      "lang": "ms"
+    },
+    {
+      "match": "apply assistance|need help|welfare|financial aid|need support|assistance application",
+      "serviceId": "welfare_relief_2025",
+      "lang": "en"
+    },
+    {
+      "match": "lesen perniagaan|mohon permit|permit perniagaan|daftar perniagaan|license perniagaan|minta lesen",
+      "serviceId": "business_permit_local",
+      "lang": "ms"
+    },
+    {
+      "match": "business license|permit application|business permit|register business|business registration",
+      "serviceId": "business_permit_local",
+      "lang": "en"
+    },
+    {
+      "match": "biasiswa|scholarship|mohon biasiswa|permohonan biasiswa|bantuan pelajaran|dana pelajaran",
+      "serviceId": "scholarship_merit_2025",
+      "lang": "ms"
+    },
+    {
+      "match": "scholarship|apply scholarship|scholarship application|education grant|study aid|merit scholarship",
+      "serviceId": "scholarship_merit_2025",
+      "lang": "en"
+    }
+  ]
+}

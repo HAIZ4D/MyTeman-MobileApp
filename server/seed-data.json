@@ -1,0 +1,84 @@
+{
+  "users": [
+    {
+      "uid": "user_aminah",
+      "name": "Puan Aminah",
+      "ic_number": "XXXXXX-01-1234",
+      "dob": "1948-01-01",
+      "address": "Kg. Seri Aman, Kedah",
+      "mydigitalid_linked": true,
+      "biometric_enabled": true,
+      "preferred_language": "ms",
+      "accessibility": {
+        "visually_impaired": true,
+        "voice_first": true,
+        "rural_mode": false
+      }
+    },
+    {
+      "uid": "user_david",
+      "name": "Encik David",
+      "ic_number": "XXXXXX-02-2345",
+      "dob": "1975-06-15",
+      "address": "Kg. Kuala Muda, Kedah",
+      "mydigitalid_linked": true,
+      "biometric_enabled": true,
+      "preferred_language": "ms",
+      "accessibility": {
+        "visually_impaired": false,
+        "voice_first": false,
+        "rural_mode": true
+      }
+    },
+    {
+      "uid": "user_sarah",
+      "name": "Cik Sarah",
+      "ic_number": "XXXXXX-03-3456",
+      "dob": "1990-03-22",
+      "address": "Kuala Lumpur",
+      "mydigitalid_linked": true,
+      "biometric_enabled": true,
+      "preferred_language": "en",
+      "accessibility": {
+        "visually_impaired": true,
+        "voice_first": false,
+        "rural_mode": false
+      }
+    }
+  ],
+  "services": [
+    {
+      "serviceId": "welfare_relief_2025",
+      "title": "Bantuan Kebajikan Harian",
+      "title_en": "Daily Welfare Relief",
+      "required_fields": ["income_proof", "household_size", "reason"],
+      "categories": ["welfare", "social"],
+      "description": "Bantuan kebajikan untuk keluarga berpendapatan rendah.",
+      "description_en": "Welfare assistance for low-income families.",
+      "icon": "volunteer_activism",
+      "estimated_days": 14
+    },
+    {
+      "serviceId": "business_permit_local",
+      "title": "Permohonan Lesen Perniagaan Tempatan",
+      "title_en": "Local Business Permit Application",
+      "required_fields": ["business_name", "business_type", "address", "owner_ic"],
+      "categories": ["business", "permits"],
+      "description": "Permohonan lesen untuk perniagaan kecil dan sederhana.",
+      "description_en": "License application for small and medium businesses.",
+      "icon": "business_center",
+      "estimated_days": 21
+    },
+    {
+      "serviceId": "scholarship_merit_2025",
+      "title": "Biasiswa Merit Universiti 2025",
+      "title_en": "University Merit Scholarship 2025",
+      "required_fields": ["academic_transcript", "personal_statement", "income_proof", "reference_letter"],
+      "categories": ["education", "scholarship"],
+      "description": "Biasiswa merit untuk pelajar cemerlang melanjutkan pengajian ke universiti.",
+      "description_en": "Merit scholarship for excellent students pursuing university education.",
+      "icon": "school",
+      "estimated_days": 30
+    }
+  ]
+}

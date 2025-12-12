@@ -1,0 +1,10 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // ⚠️ TEMPORARY TESTING RULES - OPEN ACCESS FOR DEBUGGING
+    // TODO: Revert to secure rules after testing
+    match /{document=**} {
+      allow read, write: if true;  // ⚠️ WARNING: Allows all access for testing!
+    }
+  }
+}

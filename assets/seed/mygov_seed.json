@@ -1,0 +1,108 @@
+{
+  "users": [
+    {
+      "uid": "user_aminah",
+      "name": "Puan Aminah",
+      "ic_number": "XXXXXX-01-1234",
+      "dob": "1948-01-01",
+      "address": "Kg. Seri Aman, Kedah",
+      "citizenship": "Malaysia",
+      "mydigitalid_linked": true,
+      "biometric_enabled": true,
+      "preferred_language": "ms",
+      "accessibility": {
+        "visually_impaired": true,
+        "voice_first": true,
+        "rural_mode": false
+      },
+      "household_income": 1200,
+      "existing_aids": ["STR"],
+      "household_size": 3
+    },
+    {
+      "uid": "user_ahmad",
+      "name": "Ahmad bin Abdullah",
+      "ic_number": "XXXXXX-04-4567",
+      "dob": "2002-05-15",
+      "address": "Taman Universiti, Skudai, Johor",
+      "citizenship": "Malaysia",
+      "mydigitalid_linked": true,
+      "biometric_enabled": true,
+      "preferred_language": "ms",
+      "accessibility": {
+        "visually_impaired": false,
+        "voice_first": true,
+        "rural_mode": false
+      },
+      "oku_status": true,
+      "oku_id": "JKM-OKU-2023-001234",
+      "institution": "Universiti Teknologi Malaysia",
+      "enrollment_no": "A20EC0123",
+      "bank_account_no": "1234567890123",
+      "bank_name": "Maybank",
+      "household_income": 2500,
+      "existing_aids": [],
+      "household_size": 5,
+      "stored_docs": [
+        {
+          "name": "Sijil OKU",
+          "path": "assets/sample_docs/disability_cert.pdf",
+          "type": "disability_cert"
+        },
+        {
+          "name": "Kad Matrikulasi",
+          "path": "assets/sample_docs/matriculation.pdf",
+          "type": "matriculation"
+        },
+        {
+          "name": "Transkrip Semester 1",
+          "path": "assets/sample_docs/transcript.pdf",
+          "type": "transcript"
+        },
+        {
+          "name": "Penyata Bank",
+          "path": "assets/sample_docs/bank_statement.pdf",
+          "type": "bank_statement"
+        }
+      ]
+    }
+  ],
+  "services": [
+    {
+      "serviceId": "peka_b40_clinic_search",
+      "title": "Carian Klinik PEKA B40",
+      "title_en": "PEKA B40 Clinics List Search",
+      "required_fields": ["location", "preferred_distance"],
+      "categories": ["healthcare", "b40"],
+      "description": "Cari klinik PEKA B40 berdekatan dengan lokasi anda untuk pemeriksaan kesihatan percuma.",
+      "description_en": "Find PEKA B40 clinics near your location for free health screenings.",
+      "icon": "local_hospital",
+      "estimated_days": 0,
+      "features": ["maps_integration", "call_clinic", "book_appointment", "navigation"]
+    },
+    {
+      "serviceId": "peka_b40_eligibility_check",
+      "title": "Semak Kelayakan PEKA B40",
+      "title_en": "PEKA B40 Eligibility Check",
+      "required_fields": ["ic_number", "household_income"],
+      "categories": ["healthcare", "b40", "eligibility"],
+      "description": "Semak kelayakan anda untuk program PEKA B40 menggunakan MyDigitalID.",
+      "description_en": "Check your eligibility for PEKA B40 program using MyDigitalID.",
+      "icon": "verified_user",
+      "estimated_days": 0,
+      "features": ["mydigitalid_integration", "instant_verification", "auto_enroll"]
+    },
+    {
+      "serviceId": "bkoku_application_2025",
+      "title": "Permohonan BKOKU 2025",
+      "title_en": "Application for Financial Assistance for Disabled Students (BKOKU)",
+      "required_fields": ["student_ic", "disability_type", "institution_name", "course_name", "medical_certificate", "institution_offer_letter"],
+      "categories": ["education", "disability", "financial_aid"],
+      "description": "Bantuan kewangan untuk pelajar OKU yang melanjutkan pengajian di IPT.",
+      "description_en": "Financial assistance for disabled students pursuing higher education.",
+      "icon": "school",
+      "estimated_days": 21,
+      "features": ["mydigitalid_autofill", "offline_mode", "document_upload", "batch_sync"]
+    }
+  ]
+}

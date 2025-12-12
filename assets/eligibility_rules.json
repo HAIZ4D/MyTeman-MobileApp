@@ -1,0 +1,106 @@
+{
+  "peka_b40": {
+    "name": "Peka B40 Eligibility",
+    "name_ms": "Kelayakan Peka B40",
+    "description": "Financial assistance for low-income Malaysians aged 40+",
+    "description_ms": "Bantuan kewangan untuk rakyat Malaysia berpendapatan rendah berumur 40 tahun ke atas",
+    "conditions": [
+      {
+        "field": "citizenship",
+        "op": "==",
+        "value": "Malaysia",
+        "required": true,
+        "error_message": "Must be a Malaysian citizen",
+        "error_message_ms": "Mesti warganegara Malaysia"
+      },
+      {
+        "field": "age",
+        "op": ">=",
+        "value": 40,
+        "required": true,
+        "error_message": "Must be 40 years old or above",
+        "error_message_ms": "Mesti berumur 40 tahun ke atas"
+      },
+      {
+        "any": [
+          {
+            "field": "existing_aids",
+            "contains": "STR",
+            "description": "Currently receiving STR",
+            "description_ms": "Sedang menerima STR"
+          },
+          {
+            "field": "household_income",
+            "op": "<=",
+            "value": 2500,
+            "description": "Household income RM 2,500 or below",
+            "description_ms": "Pendapatan isi rumah RM 2,500 atau ke bawah"
+          }
+        ],
+        "required": true,
+        "error_message": "Must either receive STR or have household income RM 2,500 or below",
+        "error_message_ms": "Mesti menerima STR atau pendapatan isi rumah RM 2,500 atau ke bawah"
+      }
+    ],
+    "missing_fields_questions": {
+      "household_income": {
+        "question": "What is your household monthly income in ringgit?",
+        "question_ms": "Berapakah pendapatan isi rumah anda sebulan dalam ringgit?",
+        "type": "number",
+        "hint": "Example: 1500",
+        "hint_ms": "Contoh: 1500"
+      },
+      "existing_aids": {
+        "question": "Are you currently receiving Sumbangan Tunai Rahmah (STR) or other cash aids?",
+        "question_ms": "Adakah anda sedang menerima Sumbangan Tunai Rahmah (STR) atau bantuan tunai lain?",
+        "type": "yes_no",
+        "hint": "Say 'yes' or 'no'",
+        "hint_ms": "Kata 'ya' atau 'tidak'"
+      }
+    },
+    "next_steps": {
+      "eligible": {
+        "title": "You are eligible for Peka B40!",
+        "title_ms": "Anda layak untuk Peka B40!",
+        "actions": [
+          {
+            "label": "Apply Now",
+            "label_ms": "Mohon Sekarang",
+            "route": "/services/peka_b40_application"
+          },
+          {
+            "label": "Learn More",
+            "label_ms": "Ketahui Lebih Lanjut",
+            "url": "https://www.peka.gov.my"
+          }
+        ],
+        "message": "Based on your profile, you meet the requirements for Peka B40 assistance. You can proceed to apply.",
+        "message_ms": "Berdasarkan profil anda, anda memenuhi syarat untuk bantuan Peka B40. Anda boleh teruskan permohonan."
+      },
+      "not_eligible": {
+        "title": "You are not eligible for Peka B40",
+        "title_ms": "Anda tidak layak untuk Peka B40",
+        "actions": [
+          {
+            "label": "Explore Other Services",
+            "label_ms": "Terokai Perkhidmatan Lain",
+            "route": "/services"
+          },
+          {
+            "label": "FAQs",
+            "label_ms": "Soalan Lazim",
+            "url": "https://www.peka.gov.my/faq"
+          }
+        ],
+        "message": "Unfortunately, you do not meet the current eligibility criteria. Please explore other government assistance programs.",
+        "message_ms": "Maaf, anda tidak memenuhi kriteria kelayakan semasa. Sila terokai program bantuan kerajaan yang lain."
+      },
+      "pending": {
+        "title": "Eligibility check pending",
+        "title_ms": "Semakan kelayakan dalam proses",
+        "message": "We need more information to determine your eligibility. Please answer the additional questions.",
+        "message_ms": "Kami memerlukan maklumat tambahan untuk menentukan kelayakan anda. Sila jawab soalan tambahan."
+      }
+    }
+  }
+}
